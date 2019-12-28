@@ -65,44 +65,44 @@ br.com.crosoften.project
 ```viewmodel```: Camada responsável pela parte lógica e a conexão entre a camada de view e a camada model.
 
 # Bibliotecas Padrões que são Utilizadas
-* Material Design
+* [Material Design](https://material.io/develop/android/docs/getting-started/)
 
 Biblioteca Utilizada de acordo com os padrões estabelecidos pelo Material Design, na construção de Layouts, Animações, por se tratar de uma biblioteca que faz parte do conjunto de componentes de arquitetura do JetPack.
 
-* Lifecycle
+* [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 
 Os componentes que reconhecem o ciclo de vida executam ações em resposta a uma mudança no status do ciclo de vida de outro componente, como atividades e fragmentos. Esses componentes ajudam você a produzir códigos mais organizados e, com frequência, mais leves, mais fáceis de manter. Componentes Utilizados: LiveData e ViewModel.
 
-* Paging
+* [Paging](https://developer.android.com/jetpack/androidx/releases/paging)
 
 A Biblioteca de Paginação facilita o carregamento de dados de forma gradual e elegante no RecyclerView do seu aplicativo . Consulte os documentos de referência para mais informações.
 
-* Room
+* [Room](https://developer.android.com/jetpack/androidx/releases/room)
 
 A biblioteca de persistência Room fornece uma camada de abstração sobre o SQLite para permitir um acesso mais robusto ao banco de dados enquanto aproveita todo o poder do SQLite. Consulte os documentos de referência para mais informações.
 
-* Retrofit
+* [Retrofit](https://square.github.io/retrofit/)
 
 Um cliente HTTP de segurança de tipos para Android, Utilizado para comunicação com WebServices.
 
-* Gson
+* [Gson](https://github.com/google/gson)
 
 O Gson é uma biblioteca Java que pode ser usada para converter objetos Java em sua representação JSON. Ele também pode ser usado para converter uma sequência JSON em um objeto Java equivalente. O Gson pode trabalhar com objetos Java arbitrários, incluindo objetos pré-existentes dos quais você não possui código-fonte. Este Utilizado em conjunto com o Retrofit
 
-* Dagger2
+* [Dagger2](https://github.com/google/dagger)
 
 Um injetor de dependência rápida para Java e Android. Dagger é uma estrutura de tempo de compilação para injeção de dependência. Ele não usa geração de bytecode de reflexão ou de tempo de execução, faz toda a sua análise em tempo de compilação e gera código-fonte Java simples.
 
-* RxJava
+* [RxJava](https://github.com/ReactiveX/RxJava)
 
 O RxJava é uma implementação Java VM de Extensões Reativas : uma biblioteca para composição de programas assíncronos e baseados em eventos usando sequências observáveis.
 
 Ele estende o padrão de observador para suportar sequências de dados / eventos e adiciona operadores que permitem compor sequências juntos de forma declarativa, abstraindo preocupações sobre coisas como estruturas de dados de threading de baixo nível, sincronização, thread-safety e concorrentes. Este Utilizado em conjunto com o Retrofit.
 
-* RxAndroid
+* [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 
 Este módulo adiciona as classes mínimas ao RxJava que tornam a gravação de componentes reativos em aplicativos Android fácil e sem complicações. Mais especificamente, fornece um Schedulerprograma que agende no thread principal ou em qualquer dado Looper. Este Utilizado em conjunto com o Retrofit.
 
-* Data Binding
+* [Data Binding](https://developer.android.com/topic/libraries/data-binding?hl=pt-br)
 
 A Data Binding Library é uma biblioteca de apoio que permite vincular componentes de IU dos seus layouts a fontes de dados do app usando um formato declarativo, em vez de programático.
