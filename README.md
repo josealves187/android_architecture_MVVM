@@ -1,9 +1,13 @@
-Android Architecture MVVM
+#Android Architecture MVVM 
+
 Esse repositório foi criado com o objetivo de instruir boas práticas para o desenvolvimento Android visando um código mais legível. Ele é utilizado internamente pela equipe de desenvolvimento de APPs da Crosoften Tecnologia e Inovação com o propositório de padronizar, estruturar e manter uma melhor qualidade de código.
 
-Arquitetura do projeto
+##Arquitetura do projeto
+
 Durante nossos projetos utilizamos o conceito de Model-View-ViewModel (ou MVVM), com algumas pequenas modificações para melhor se adequar ao nosso ambiente.
 
+
+```
 br.com.crosoften.project
 ├─ commom
 ├─ data
@@ -27,6 +31,7 @@ br.com.crosoften.project
    ├─ dialogs
    └─ fragments
 └─ viewmodel
+```
 commom: Camada referente a classes comums ao projeto, classes de domínio geral.
 
 data: É a camada responsavel por acessar o banco de dados. Dentro dela temos:
