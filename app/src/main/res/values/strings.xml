@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Mensagens ou texto geral do app -->
+    <string name="app_name">Architecture</string>
+
+    <!-- Mensagens de erro -->
+    <string name="error_post">Ocorreu um erro ao carregar as postagens</string>
+
+    <!-- Mensagens de sucesso -->
+    <string name="success_post">Sucesso ao carregar as postagens!</string>
+
+    <!-- Mensagens em CAPSLOCK -->
+    <string name="caps_attention">ATENÇÃO</string>
+
+    <!-- Mensagens que indicam um requisito para um campo -->
+    <string name="required_password">Senha Obrigatória</string>
+
+    <!-- Mensagens de informação -->
+    <string name="info_password">Senha deverá conter no mínimo 8 caracteres</string>
+
+    <!-- Títulos -->
+    <string name="title_toolbar_activity_change_password">Alterar senha</string>
+
+    <!-- Mensagens de ações como "salvar" , "Criar" , "Confirmar" e etc. -->
+    <string name="action_change_password">Alterar senha</string>
+    <string name="action_retry">Recarregar</string>
+
+
+</resources>

@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 29
+
+    // Habilitando a utilização de Data Binding.
+    dataBinding {
+        enabled = true
+    }
+
+    defaultConfig {
+        applicationId "com.crosoften.architecture"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // Support Design and Material Design
+    implementation "com.android.support:design:$android_support_version"
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+
+    // Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+
+    // LiveData & ViewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // Dagger 2
+    implementation "com.google.dagger:dagger:$dagger2_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    compileOnly "org.glassfish:javax.annotation:3.1.1"
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_java_android_version"
+}
